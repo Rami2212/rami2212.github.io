@@ -375,30 +375,27 @@ portfolioItems.forEach(item => {
 
 // Portfolio filtering functionality
 const filterBtns = document.querySelectorAll('.filter-btn');
+const portfolioItem = document.querySelectorAll('.portfolio-item');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', function () {
-        filterBtns.forEach(btn => {
-            btn.classList.remove('active');
-            btn.classList.remove('bg-[#4C9EEB]');
-            btn.classList.remove('text-white');
-            btn.classList.add('bg-gray-200');
-            btn.classList.add('text-gray-700');
+        // reset all buttons
+        filterBtns.forEach(b => {
+            b.classList.remove('active', 'bg-[#4C9EEB]', 'text-white');
+            b.classList.add('bg-gray-200', 'text-gray-700');
         });
 
-        this.classList.add('active');
-        this.classList.add('bg-[#4C9EEB]');
-        this.classList.add('text-white');
-        this.classList.remove('bg-gray-200');
-        this.classList.remove('text-gray-700');
+        // set active button style
+        this.classList.add('active', 'bg-[#4C9EEB]', 'text-white');
+        this.classList.remove('bg-gray-200', 'text-gray-700');
 
         const filter = this.getAttribute('data-filter');
 
         // Filter items
-        portfolioItems.forEach(item => {
-            const category = item.getAttribute('data-category');
+        portfolioItem.forEach(item => {
+            const categories = item.getAttribute('data-category').split(" "); // split by space
 
-            if (filter === 'all' || filter === category) {
+            if (filter === 'all' || categories.includes(filter)) {
                 gsap.to(item, {
                     opacity: 1,
                     scale: 1,
@@ -418,8 +415,6 @@ filterBtns.forEach(btn => {
         });
     });
 });
-
-
 
 
 
