@@ -7,17 +7,20 @@ A modern and responsive portfolio website built using **HTML**, **CSS**, **Tailw
 
 This one-page portfolio highlights my professional background, skills, projects, testimonials, and contact details in a clean and engaging layout.
 
-## 📚 Sections Included
-* ✅ Header (sticky header and mobile header)
-* ✅ Hero Section with downloadable CV
-* ✅ About Me
-* ✅ What I Do
-* ✅ My Portfolio with filterable portfolio
-* ✅ My Skills with progress bars
-* ✅ Experiences with a timeline
-* ✅ Client Testimonials with a slider
-* ✅ Contact Section (with interactive map and working form)
-* ✅ Footer
+## 💡 Features
+* ✅ Fully responsive and mobile-friendly design
+* ✅ Welcome popup
+* ✅ Contact me popup
+* ✅ Smooth scrolling and animations
+* ✅ **Filterable project portfolio** (e.g., Web, App, Design)
+* ✅ Interactive **testimonials slider** using Swiper.js
+* ✅ **Hamburger menu** for mobile navigation
+* ✅ **Downloadable CV section** with PDF
+* ✅ Live deployment with GitHub Pages
+* ✅ Contact form with real email integration via FormSubmit
+* ✅ Integrated WhatsApp button
+* ✅ Social media icons linked to my social media
+* ✅ Back to top button
 
 ## 🗂️ Project Structure
 ```
@@ -50,9 +53,9 @@ To make the contact form functional using FormSubmit:
 2. Submit once to receive an activation email from FormSubmit.
 
 ## 🌍 Live Demo
-🔗 [**View the Live Site Here**](https://rami2212.github.io/My-Portfolio/)
+🔗 [**View the Live Site Here**](https://rami2212.github.io/)
 ```
-https://rami2212.github.io/My-Portfolio/
+https://rami2212.github.io/
 ```
 
 ## 🛠️ How to Run the Project Locally
